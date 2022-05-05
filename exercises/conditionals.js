@@ -373,7 +373,7 @@ var shirtLength = 29
 var shirtSleeve = 8.47
 
 if (shirtWidth <= 18 && shirtLength <= 28 && shirtSleeve <= 8.13) {
-  console.log('s')
+  //console.log('s')
 } else if (
   shirtWidth === 20 &&
   shirtWidth <= 22 &&
@@ -382,7 +382,7 @@ if (shirtWidth <= 18 && shirtLength <= 28 && shirtSleeve <= 8.13) {
   shirtSleeve === 8.38 &&
   shirtSleeve <= 8.63
 ) {
-  console.log('m')
+  //console.log('m')
 } else if (
   shirtWidth === 22 &&
   shirtWidth <= 24 &&
@@ -391,7 +391,7 @@ if (shirtWidth <= 18 && shirtLength <= 28 && shirtSleeve <= 8.13) {
   shirtSleeve === 8.63 &&
   shirtSleeve <= 8.88
 ) {
-  console.log('l')
+  //console.log('l')
 } else if (
   shirtWidth === 24 &&
   shirtWidth <= 26 &&
@@ -400,7 +400,7 @@ if (shirtWidth <= 18 && shirtLength <= 28 && shirtSleeve <= 8.13) {
   shirtSleeve === 8.88 &&
   shirtSleeve <= 9.63
 ) {
-  console.log('xl')
+  // console.log('xl')
 } else if (
   shirtWidth === 26 &&
   shirtWidth <= 28 &&
@@ -409,11 +409,11 @@ if (shirtWidth <= 18 && shirtLength <= 28 && shirtSleeve <= 8.13) {
   shirtSleeve === 9.63 &&
   shirtSleeve <= 10.13
 ) {
-  console.log('2xl')
+  //console.log('2xl')
 } else if (shirtWidth === 28 && shirtLength === 34 && shirtSleeve === 10.13) {
-  console.log('3xl')
+  //console.log('3xl')
 } else {
-  console.log('N/A')
+  // console.log('N/A')
 }
 
 // WRITE YOUR CODE HERE
@@ -467,6 +467,23 @@ if (shirtWidth <= 18 && shirtLength <= 28 && shirtSleeve <= 8.13) {
  * - (false, false, undefined)
  */
 //let category = /* your code goes here */ //console.log(category)
+//SOLUTION
+let category = ''
+let eatAnimals = 0
+let eatsPlants = 0
+if (eatAnimals && eatsPlants) {
+  category += 'omnivore'
+  //console.log(category)
+} else if (eatsPlants) {
+  category += 'herbivore'
+  //console.log(category)
+} else if (eatAnimals) {
+  category += 'carnivore'
+  //console.log(category)
+} else if (!eatAnimals && !eatsPlants) {
+  category += 'undefined'
+  // console.log(category)
+}
 
 // 8. In 2015, the U.S. Bureau of Labor Statistics conducted research to reveal how average salary is directly related to the number of years spent in school. In their findings, they found that people with:
 //     • no high school diploma earned an average of $25,636/year,
