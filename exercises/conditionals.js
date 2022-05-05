@@ -285,6 +285,12 @@ if (!checkBalance) {
  *  - the toppings is something other than "sprinkles" or "peanuts"
  *
  * 6. Your code should not be empty
+ * // change the values of `flavor`, `vessel`, and `toppings` to test your code
+// let flavor = 'strawberry'
+// let vessel = 'cone'
+// var toppings = 'cookies'
+
+// Add your code here
  */
 //SOLUTION
 var flavor = 'chocolate'
@@ -299,13 +305,6 @@ if (
   message = `I'd like two scoops of ${flavor} ice cream in a ${vessel} with ${toppings}.`
   //console.log(message)
 }
-
-// change the values of `flavor`, `vessel`, and `toppings` to test your code
-// let flavor = 'strawberry'
-// let vessel = 'cone'
-// var toppings = 'cookies'
-
-// Add your code here
 
 // 6. What do i wear?
 // If you're like me, finding the right size t-shirt can sometimes be a challenge. What size am I? What's the difference between S (small), M (medium), and L (large)? I usually wear L, but what if I need an XL (extra large)?
@@ -368,6 +367,55 @@ if (
  * [28, 34, 10.13, '3XL']
  * [18, 29, 8.47, 'NA']
  */
+//SOLUTION
+var shirtWidth = 18
+var shirtLength = 29
+var shirtSleeve = 8.47
+
+if (shirtWidth <= 18 && shirtLength <= 28 && shirtSleeve <= 8.13) {
+  console.log('s')
+} else if (
+  shirtWidth === 20 &&
+  shirtWidth <= 22 &&
+  shirtLength === 29 &&
+  shirtLength <= 30 &&
+  shirtSleeve === 8.38 &&
+  shirtSleeve <= 8.63
+) {
+  console.log('m')
+} else if (
+  shirtWidth === 22 &&
+  shirtWidth <= 24 &&
+  shirtLength === 30 &&
+  shirtLength <= 31 &&
+  shirtSleeve === 8.63 &&
+  shirtSleeve <= 8.88
+) {
+  console.log('l')
+} else if (
+  shirtWidth === 24 &&
+  shirtWidth <= 26 &&
+  shirtLength === 31 &&
+  shirtLength <= 33 &&
+  shirtSleeve === 8.88 &&
+  shirtSleeve <= 9.63
+) {
+  console.log('xl')
+} else if (
+  shirtWidth === 26 &&
+  shirtWidth <= 28 &&
+  shirtLength === 33 &&
+  shirtLength <= 34 &&
+  shirtSleeve === 9.63 &&
+  shirtSleeve <= 10.13
+) {
+  console.log('2xl')
+} else if (shirtWidth === 28 && shirtLength === 34 && shirtSleeve === 10.13) {
+  console.log('3xl')
+} else {
+  console.log('N/A')
+}
+
 // WRITE YOUR CODE HERE
 
 // 7. From the smallest of creatures to the largest of animals, inevitably every living, breathing thing must ingest other organisms to survive. This means that all animals will fall within one of the three consumer-based categories based on the types of food that they eat.
