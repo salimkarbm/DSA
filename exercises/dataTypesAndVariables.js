@@ -130,6 +130,8 @@ let haiku =
  * 2. Your variable `fullName` should be declared using the `var` keyword
  * 3. Your variable `fullName` should be a non-empty string
  */
+//SOLUTION
+var fullName = 'salim imuzai'
 
 // your code goes here
 
