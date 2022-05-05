@@ -26,7 +26,7 @@
  * 7. Your code should log the `fahrenheit` variable
  * 8. Your code should not be empty
  */
-
+//SOLUTION
 let celsius = 12
 let fahrenheit = celsius * 1.8 + 32 /* convert celsius to fahrenheit here */
 // console.log(/* print out result here */);
@@ -45,6 +45,8 @@ let fahrenheit = celsius * 1.8 + 32 /* convert celsius to fahrenheit here */
  * 3. Your code must have a `console.log()` function
  * 4. Your code should not be empty
  */
+//SOLUTION
+const favoriteFood = 'Fried Ripe Plantain and Fried eggs'
 //console.log(/* replace this comment with your string */);
 
 // 3. String Equality
