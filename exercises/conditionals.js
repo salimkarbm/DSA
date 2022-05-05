@@ -62,7 +62,20 @@ if (number % 2 === 0) {
  */
 
 // change the value of `musicians` to test your conditional statements
-let musicians = 1
+let musicians = 20
+if (musicians <= 0) {
+  //console.log('not a group')
+} else if (musicians === 1) {
+  //console.log('solo')
+} else if (musicians === 2) {
+  //console.log('duet')
+} else if (musicians === 3) {
+  // console.log('trio')
+} else if (musicians === 1) {
+  // console.log('quertets')
+} else {
+  //console.log('this is the largest group')
+}
 // your code goes here
 
 // 3. For this quiz, you're going to help solve a fictitious murder mystery that happened at Stutern! A murder mystery is a game typically played at parties wherein one of the partygoers is secretly, and unknowingly, playing a murderer, and the other attendees must determine who among them is the criminal. It's a classic case of whodunnit.
