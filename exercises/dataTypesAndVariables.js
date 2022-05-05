@@ -86,8 +86,10 @@ const answer =
  * 2. Your joke should use only one string
  * 3. Your joke should match the expected format
 */
-// var joke = /* write your joke here */
-// console.log(joke);
+//SOLUTION
+var joke =
+  'Why couldn\'t the shoes go out and play? \n They were all "tied" up!' /* write your joke here */
+//console.log(joke)
 
 // 5. Yosa Bosun
 // Directions:
