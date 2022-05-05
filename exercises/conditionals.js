@@ -226,15 +226,15 @@ var balance = 325.0
 var isActive = true
 var checkBalance = false
 if (!checkBalance) {
-  console.log('Thank you have a nice day.')
+  //console.log('Thank you have a nice day.')
 } else if (isActive && balance > 0) {
-  console.log(`Your balance is $${balance.toFixed(2)}.`)
+  //console.log(`Your balance is $${balance.toFixed(2)}.`)
 } else if (!isActive) {
-  console.log('Your account is no longer active.')
+  //console.log('Your account is no longer active.')
 } else if (balance === 0) {
-  console.log('Your account is empty.')
+  //console.log('Your account is empty.')
 } else {
-  console.log('Your account is negative please contact your bank.')
+  //console.log('Your account is negative please contact your bank.')
 }
 
 // 5. Ice cream is one of the most versatile desserts on the planet because it can be done up so many different ways. Using logical operators, write a series of complex logical expressions that prints only if the following conditions are true:
@@ -287,6 +287,18 @@ if (!checkBalance) {
  * 6. Your code should not be empty
  */
 //SOLUTION
+var flavor = 'chocolate'
+var vessel = 'bowl'
+var toppings = 'peanuts'
+var message
+if (
+  flavor === ('vanilla' || 'chocolate') ||
+  vessel === ('cone' || 'bowl') ||
+  toppings === (toppings === 'sprinkles' || 'peanuts')
+) {
+  message = `I'd like two scoops of ${flavor} ice cream in a ${vessel} with ${toppings}.`
+  //console.log(message)
+}
 
 // change the values of `flavor`, `vessel`, and `toppings` to test your code
 // let flavor = 'strawberry'
