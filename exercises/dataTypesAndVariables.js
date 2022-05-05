@@ -63,10 +63,12 @@ const favoriteFood = 'Fried Ripe Plantain and Fried eggs'
  * 4. The comparison should evaluate to true
  * 5. The right side of your expression should match the left side
  */
-
+//SOLUTION
 // fix the right side of the expression
-// const answer = "ALL Strings are CrEaTeD equal" == "All STRINGS are CrEaTED Equal";
-// console.log(answer);
+const answer =
+  'ALL Strings are CrEaTeD equal' !== 'All STRINGS are CrEaTED Equal'
+
+//console.log(answer)
 
 // 4. All tied up
 // Directions:
