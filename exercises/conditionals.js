@@ -124,19 +124,19 @@ if (musicians <= 0) {
 // Change the value of `room` and `suspect` to test your code
 
 // A room can be either of - dining room, gallery, ballroom, or billiards room
-var room = 'billiards room'
+//var room = 'billiards room'
 
 // A suspect can be either of - Mr. Parkes, Ms. Van Cleve, Mrs. Sparr, or Mr. Kalehoff
 // Test your code by giving matching as well as unmatching names of the suspect
-var suspect = 'Mr. Parkes'
+// var suspect = 'Mr. Parkes'
 
 /* ****************************************** */
 
 /* IMPLEMENTATION LOGIC*/
 
 // Initial values
-var weapon = ''
-var solved = false
+// var weapon = ''
+// var solved = false
 
 /*
  * To help solve this mystery, write a combination of conditional statements that:
@@ -153,11 +153,42 @@ var solved = false
 
 // }
 // /* ****************************************** */
-// // The code below will run only when `solved` is true
+// The code below will run only when `solved` is true
 // if (solved) {
-// 	console.log(/* your message goes here*/);
+//   console.log(/* your message goes here*/)
 // }
 /* ****************************************** */
+//SOLUTION
+var weapon = ''
+var solved = false
+var suspect = 'Mr. Parkes'
+var room = 'dining room'
+var message = ''
+
+if (room === 'billiards room' && suspect === 'Mrs. Sparr') {
+  weapon += 'pool stick'
+  solved = true
+  message += `the mystery was solved:
+ ${suspect} did it in the ${room} with the ${weapon}!`
+} else if (room === 'dining room' && suspect === 'Mr. Parkes') {
+  weapon += 'knife'
+  solved = true
+  message += `the mystery was solved:
+  ${suspect} did it in the ${room} with the ${weapon}!`
+} else if (room === 'gallery' && suspect === 'Ms. Van Cleve') {
+  weapon += 'trophy'
+  solved = true
+  message += `the mystery was solved:
+  ${suspect} did it in the ${room} with the ${weapon}!`
+} else if (room === 'ballroom' && suspect === 'Mr. Kalehoff') {
+  weapon += 'poison'
+  solved = true
+  message += `the mystery was solved:
+  ${suspect} did it in the ${room} with the ${weapon}!`
+}
+if (solved) {
+  console.log(message)
+}
 
 // 4. Checking your balance
 // Using the flowchart below, write the code to represent checking your balance at the ATM. The yellow diamonds represent conditional statements and the blue rectangles with rounded corners represent what should be printed to the console.
