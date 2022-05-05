@@ -110,9 +110,12 @@ var joke =
  * 2. Your code should use string concatenation
  * 3. Your poem should match the famous haiku poem
  */
-
-// let haiku = /* concatenate the strings here */
-// console.log(haiku);
+//SOLUTION
+let haiku =
+  'Blowing from the west \n' +
+  'Fallen leaves gather \n' +
+  'In the east.' /* concatenate the strings here */
+//console.log(haiku)
 
 // 6. What’s my name?
 // Directions:
