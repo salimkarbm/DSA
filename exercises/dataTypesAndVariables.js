@@ -185,7 +185,11 @@ var result = '$' + total.toFixed(2)
  * 3. Your madLib should match the given string
  * 4. The madLib variable should be printed to the console
  */
-
+//SOLUTION
+let adjective1 = 'amazing'
+let adjective2 = 'fun'
+let adjective3 = 'entertaining'
+var game = `The Intro to JavaScript course is ${adjective1}. James and Julia are so ${adjective2}. I cannot wait to work through the rest of this ${adjective3} content!`
 // your code goes here
 
 // 9. One Awesome message
