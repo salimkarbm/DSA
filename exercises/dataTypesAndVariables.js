@@ -153,6 +153,12 @@ var fullName = 'salim imuzai'
  * 5. Your variabe `total` should be a number, having a value equal to the `bill` and `tip` added together
  * 6. Your code should print the total to the console
  */
+//SOLUTION
+var bill = 10.25 + 3.99 + 7.15
+var tip = bill * 0.15
+var total = bill + tip
+var result = '$' + total.toFixed(2)
+//console.log(result)
 
 // your code goes here
 
