@@ -187,7 +187,7 @@ if (room === 'billiards room' && suspect === 'Mrs. Sparr') {
   ${suspect} did it in the ${room} with the ${weapon}!`
 }
 if (solved) {
-  console.log(message)
+  //console.log(message)
 }
 
 // 4. Checking your balance
@@ -220,6 +220,22 @@ if (solved) {
 // let checkBalance = true
 // let isActive = false
 // your code goes here
+
+//SOLUTION
+var balance = 325.0
+var isActive = true
+var checkBalance = false
+if (!checkBalance) {
+  console.log('Thank you have a nice day.')
+} else if (isActive && balance > 0) {
+  console.log(`Your balance is $${balance.toFixed(2)}.`)
+} else if (!isActive) {
+  console.log('Your account is no longer active.')
+} else if (balance === 0) {
+  console.log('Your account is empty.')
+} else {
+  console.log('Your account is negative please contact your bank.')
+}
 
 // 5. Ice cream is one of the most versatile desserts on the planet because it can be done up so many different ways. Using logical operators, write a series of complex logical expressions that prints only if the following conditions are true:
 //     • if flavor is set to vanilla or chocolate and
@@ -270,6 +286,7 @@ if (solved) {
  *
  * 6. Your code should not be empty
  */
+//SOLUTION
 
 // change the values of `flavor`, `vessel`, and `toppings` to test your code
 // let flavor = 'strawberry'
