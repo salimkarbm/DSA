@@ -191,6 +191,9 @@ while (time >= 0) {
 //     console.log("hello " + x);
 //     x = x - 1;
 // }
+for (var z = 9; z >= 1; z = z - 1) {
+  console.log('hello ' + z)
+}
 
 // 5. Here is a for loop that's supposed to print the numbers 5 through 9. Fix the error!
 // for (x < 10; x++) {
@@ -216,8 +219,8 @@ while (time >= 0) {
 //     console.log(x);
 // }
 //SOLUTION
-for (var z = 9; z >= 1; z = z - 1) {
-  console.log('hello ' + z)
+for (let k = 0; k < 200; k++) {
+  console.log(k)
 }
 
 // 6. The for loop below has an error. Fix it!
@@ -243,10 +246,12 @@ for (var z = 9; z >= 1; z = z - 1) {
 //     console.log(k);
 // }
 //SOLUTION
-for (let k = 0; k < 200; k++) {
-  console.log(k)
+let factorial = 12
+let result = factorial
+for (let f = 1; f < factorial; f++) {
+  result *= f
+  console.log(result)
 }
-
 // 7. Write a for (note: not a function) loop that prints out the factorial of the number 12:
 // A factorial is calculated by multiplying a number by all the numbers below it. For instance, 3! or "3 factorial" is 3 * 2 * 1 = 6
 // 3! = 3 * 2 * 1 = 6
