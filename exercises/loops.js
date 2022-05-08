@@ -215,6 +215,10 @@ while (time >= 0) {
 // for (x < 10; x++) {
 //     console.log(x);
 // }
+//SOLUTION
+for (var z = 9; z >= 1; z = z - 1) {
+  console.log('hello ' + z)
+}
 
 // 6. The for loop below has an error. Fix it!
 // for (let k = 0 k < 200 k++) {
@@ -238,6 +242,10 @@ while (time >= 0) {
 // for (let k = 0 k < 200 k++) {
 //     console.log(k);
 // }
+//SOLUTION
+for (let k = 0; k < 200; k++) {
+  console.log(k)
+}
 
 // 7. Write a for (note: not a function) loop that prints out the factorial of the number 12:
 // A factorial is calculated by multiplying a number by all the numbers below it. For instance, 3! or "3 factorial" is 3 * 2 * 1 = 6
@@ -254,6 +262,7 @@ while (time >= 0) {
  */
 
 // your code goes here
+// SOLUTION
 
 // 8. Theater seats often display a row and seat number to help theater goers find their seats. If there are 26 rows (0 to 25) and 100 seats (0 to 99) in each row, write a nested for loop to print out all of the different seat combinations in the theater.
 // Example output for row-seat information: output each row and seat number on a separate line
