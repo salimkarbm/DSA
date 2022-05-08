@@ -89,7 +89,19 @@ while (x < 20) {
 //     // don't forget to check pluralization on the last line!
 //     // decrement num
 // }
-
+//SOLUTION
+function bottles(num) {
+  while (num > 0) {
+    let word = num == 1 ? 'bottle' : 'bottles'
+    let word2 = num - 1 == 1 ? 'bottle' : 'bottles'
+    console.log(`
+  ${num} ${word} of juice on the wall! ${num} ${word} of juice! Take one down, pass it around... ${
+      num - 1
+    } ${word2} of juice on the wall!
+  `)
+    num--
+  }
+}
 // 3. NASA's countdown to launch includes checkpoints where NASA engineers complete certain technical tasks. During the final minute, NASA has 6 tasks to complete:
 //     • Orbiter transfers from ground to internal power (T-50 seconds)
 //     • Ground launch sequencer is go for auto sequence start (T-31 seconds)
