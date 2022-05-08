@@ -295,3 +295,8 @@ for (let f = 1; f < factorial; f++) {
  * - Your code should produce the expected output, as explained above
  */
 // Write your code here
+for (let row = 0; row < 26; row++) {
+  for (let seat = 0; seat < 100; seat++) {
+    console.log(row + '-' + seat)
+  }
+}
