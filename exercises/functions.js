@@ -38,6 +38,15 @@ function laugh(){
 * - Your `laugh()` function should have one parameter named `num`
 * - Your `laugh()` function should return the correct number of laughs
 */
+function laugh(num){
+  let word = ''
+  for(var i = 1; i <= num; i++){
+   word += 'ha'
+   
+  }
+  return word+'!'
+}
+console.log(laugh(4))
   
 // 3. For this quiz, you're going to create a function called buildTriangle() that will accept an input (the triangle at its widest width) and will return the string representation of a triangle. See the example output below.
 // buildTriangle(10);
