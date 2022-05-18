@@ -108,15 +108,7 @@ function buildTriangle(cb, length){
   }
 return angle
 }
-console.log(buildTriangle(makeLine, 10));
-
-
-
-
-
-
-
-
+//console.log(buildTriangle(makeLine, 10));
 
 // 4. Write an anonymous function expression that stores a function in a variable called "laugh" and outputs the number of "ha"s that you pass in as an argument.
 // laugh(3);
@@ -134,8 +126,14 @@ console.log(buildTriangle(makeLine, 10));
 // const laugh = /* finish the function expression */
 // console.log(laugh(10));
 
-
-
+const laughout = function (num) {
+  let smile = ''
+ for (let i = 0; i < num; i++) {
+ smile += 'ha'
+ }
+ return smile+'!'
+}
+console.log(laughout(2));
 
 // 5. Write a named function expression that stores the function in a variable called cry and returns "boohoo!". Don't forget to call the function using the variable name, not the function name:
 // cry();
