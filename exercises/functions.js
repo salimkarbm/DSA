@@ -177,3 +177,11 @@ const laughout = function (num) {
 // Call the emotions() function with two arguments
 // Argument 1 - "happy" string
 // Argument 2 - an inline function expression
+
+function emotions(cb){
+  return "I am happy, "+ cb()
+
+}
+console.log(emotions(function(){
+  return "hahahahahahahahahaha!"
+}))
