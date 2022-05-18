@@ -15,7 +15,7 @@
 function laugh(){
   return "hahahahahahahahahaha!"
 }
- console.log(laugh());
+ //console.log(laugh());
 
 // 2. Write a function called laugh() that takes one parameter, num that represents the number of "ha"s to return.
 // TIP: You might need a loop to solve this!
@@ -46,7 +46,7 @@ function laugh(num){
   }
   return word+'!'
 }
-console.log(laugh(4))
+//console.log(laugh(4))
   
 // 3. For this quiz, you're going to create a function called buildTriangle() that will accept an input (the triangle at its widest width) and will return the string representation of a triangle. See the example output below.
 // buildTriangle(10);
@@ -87,19 +87,28 @@ console.log(laugh(4))
 * - Your `laugh()` function should build the triangle as describe above
 */
 
-// creates a line of * for a given length
-// function makeLine(length) {
-//    var line = "";
-//    for (var j = 1; j <= length; j++) {
-//        line += "* ";
-//    }
-//    return line + "\n";
-// }
-
+///creates a line of * for a given length
 // your code goes here.  Make sure you call makeLine() in your own code.
 
 // test your code by uncommenting the following line
 //console.log(buildTriangle(10));
+
+function makeLine(length) {
+   var line = "";
+   for (var j = 1; j <= length; j++) {
+       line += "* ";
+   }
+   return line + "\n";
+}
+
+function buildTriangle(cb, length){
+  let angle = "";
+  for(let i = 1; i < length; i++) {
+  angle += cb(i)
+  }
+return angle
+}
+console.log(buildTriangle(makeLine, 10));
 
 
 
