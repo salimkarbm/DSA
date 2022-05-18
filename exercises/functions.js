@@ -133,7 +133,7 @@ const laughout = function (num) {
  }
  return smile+'!'
 }
-console.log(laughout(2));
+//console.log(laughout(2));
 
 // 5. Write a named function expression that stores the function in a variable called cry and returns "boohoo!". Don't forget to call the function using the variable name, not the function name:
 // cry();
@@ -151,7 +151,10 @@ console.log(laughout(2));
 */
 // your code goes here
 
-
+ const cry = function funnycry(){
+   return "boohoo!"
+ };
+ console.log(cry())
 // 6. Call the emotions() function so that it prints the output you see below, but instead of passing the laugh() function as an argument, pass an inline function expression instead.
 // emotions("happy", laugh(2)); // you can use your laugh function from the previous quizzes
 // Prints: "I am happy, haha!"
